@@ -1,0 +1,18 @@
+# Big data files (GitHub rejects files over 100 MB)
+data/raw/*
+data/processed/*
+*.csv
+*.parquet
+*.duckdb
+
+# Keep the empty folders
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+
+# Mac
+.DS_Store
