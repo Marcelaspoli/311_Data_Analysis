@@ -14,7 +14,7 @@ NYC boroughs and neighborhoods, and what factors help explain the differences?
 ## Dataset
 - **Source:** [NYC Open Data: 311 Service Requests from 2020 to Present](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2020-to-Present/erm2-nwe9/about_data)
 - **Original size:** approx. 22 million rows and 44 columns.
-- **Data extracted on:** [add the date you downloaded it]
+- **Data extracted on:** 09 Oct 2026
 
 ### Initial filtering
 I used the query function on the NYC Open Data website to:
