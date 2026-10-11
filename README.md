@@ -30,7 +30,7 @@ Filtering was done on the created date, not the closed date.
 - Python (cleaning, statistics)
 - SQL / DuckDB (analysis)
   * DuckDB because the analysis is single-user and runs locally on a laptop
-- Power BI (visualization)
+- Tableau (visualization)
 - GitHub (version control)
 
 ## Project structure
