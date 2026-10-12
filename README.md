@@ -8,7 +8,7 @@ NYC boroughs and neighborhoods, and what factors help explain the differences?
 1. How long do requests take to close, by complaint type, agency, and area?
 2. Do gaps between areas persist within the same complaint type and agency?
 3. How do resolution times vary by month, year, and day of week?
-4. What share of requests are still open, by area?
+4. What does "closed" mean? 
 5. Are slower areas associated with neighborhood income or demographics?
 
 ## Dataset
