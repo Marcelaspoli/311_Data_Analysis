@@ -9,7 +9,7 @@ This project focuses on one complaint type, **Noise - Residential** (NYPD), so t
 1. How long do requests take to close, by area (borough and community board)?
 2. Do gaps between areas persist within the same complaint type and agency, and across time?
 3. How do resolution times vary by month, year, and day of week?
-4. What does a closed case mean?
+4. What does "closed" mean? 
 5. Are slower areas associated with neighborhood income or demographics?
 
 ## Dataset
