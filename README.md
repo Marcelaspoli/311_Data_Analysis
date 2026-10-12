@@ -1,14 +1,15 @@
 # NYC 311 Service Requests: Do Response Times Differ Across Neighborhoods?
 
 ## Central question
-Do response and resolution times for the same type of 311 complaint differ across
-NYC boroughs and neighborhoods, and what factors help explain the differences?
+Do response and resolution times for the same type of 311 complaint differ across NYC boroughs and neighborhoods, and what factors help explain the differences?
+
+This project focuses on one complaint type, **Noise - Residential** (NYPD), so that areas are compared like with like.
 
 ### Sub-questions
-1. How long do requests take to close, by complaint type, agency, and area?
-2. Do gaps between areas persist within the same complaint type and agency?
+1. How long do requests take to close, by area (borough and community board)?
+2. Do gaps between areas persist within the same complaint type and agency, and across time?
 3. How do resolution times vary by month, year, and day of week?
-4. What share of requests are still open, by area?
+4. What does a closed case mean?
 5. Are slower areas associated with neighborhood income or demographics?
 
 ## Dataset
@@ -24,18 +25,17 @@ I used the query function on the NYC Open Data website to:
   excluded because it is an incomplete year.
 
 After these changes the dataset contains approx. 10 million rows and 11 columns.
-Filtering was done on the created date, not the closed date.
 
 ## Tools
 - Python (cleaning, statistics)
 - SQL / DuckDB (analysis)
   * DuckDB because the analysis is single-user and runs locally on a laptop
-- Tableau (visualization)
+- Tableau Public (visualization)
 - GitHub (version control)
 
 ## Project structure
 - `data/`: raw and processed data (not tracked in Git because of file size)
-- `scripts/`: Python scripts for conversion and cleaning
+- `scripts/`: Python scripts for conversion, cleaning and running SQL
 - `sql/`: SQL queries, one per sub-question
 - `notebooks/`: exploratory notebooks
 - `results/`: small aggregated result tables
@@ -43,6 +43,10 @@ Filtering was done on the created date, not the closed date.
 - `report/`: final report and presentation
 
 ## Status
-Work in progress.
+Data cleaned; SQL analysis in progress.
 
 ## Limitations (to be completed)
+- Complaint volume reflects who chooses to report, not necessarily where problems exist.
+- "Closed" does not always mean "resolved" (sub-question 4).
+- Findings describe associations not causes.
+- Results cover one complaint type, so they may not apply to other 311 services.
