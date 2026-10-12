@@ -1,0 +1,10 @@
+step,rows
+1. Noise - Residential rows,1139683
+   duplicate unique keys,0
+   created date failed to parse,0
+"   no closed date (kept, flagged as open)",0
+   closed before created (removed),124
+   closed after more than 720 hours (removed),42
+   borough missing or unspecified,288
+   zip missing or invalid,317
+2. Rows after cleaning,1139517
