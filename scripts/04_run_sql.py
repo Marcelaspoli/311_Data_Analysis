@@ -18,5 +18,5 @@ for path in sorted(glob.glob("sql/*.sql")):
         query = f.read()
     df = con.execute(query).df()
     df.to_csv(f"results/{name}.csv", index=False)
-    print(f"\n=== {name} ({len(df)} rows) ===")
+    print(f"\n- {name} ({len(df)} rows) -")
     print(df.head(10).to_string())

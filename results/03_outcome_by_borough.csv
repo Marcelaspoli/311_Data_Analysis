@@ -1,0 +1,31 @@
+borough,outcome,n,pct_within_borough
+BRONX,No evidence of violation,207740,48.6
+BRONX,Action taken,89545,20.9
+BRONX,No action necessary,80771,18.9
+BRONX,Unable to gain entry,27737,6.5
+BRONX,Other,16361,3.8
+BRONX,Gone on arrival,5429,1.3
+BROOKLYN,Action taken,111117,39.2
+BROOKLYN,No evidence of violation,100376,35.4
+BROOKLYN,No action necessary,31669,11.2
+BROOKLYN,Unable to gain entry,29323,10.3
+BROOKLYN,Other,7005,2.5
+BROOKLYN,Gone on arrival,4037,1.4
+MANHATTAN,No evidence of violation,74251,40.2
+MANHATTAN,Action taken,51856,28.0
+MANHATTAN,No action necessary,26246,14.2
+MANHATTAN,Unable to gain entry,22809,12.3
+MANHATTAN,Other,7527,4.1
+MANHATTAN,Gone on arrival,2219,1.2
+QUEENS,No evidence of violation,88079,41.0
+QUEENS,Action taken,76684,35.7
+QUEENS,No action necessary,23532,11.0
+QUEENS,Unable to gain entry,17314,8.1
+QUEENS,Other,5738,2.7
+QUEENS,Gone on arrival,3222,1.5
+STATEN ISLAND,Action taken,13293,46.4
+STATEN ISLAND,No evidence of violation,10906,38.1
+STATEN ISLAND,No action necessary,2542,8.9
+STATEN ISLAND,Unable to gain entry,1023,3.6
+STATEN ISLAND,Other,504,1.8
+STATEN ISLAND,Gone on arrival,374,1.3
