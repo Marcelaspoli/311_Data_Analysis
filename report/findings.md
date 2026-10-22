@@ -62,7 +62,14 @@ under 30 min	338,975	34.4%	36.0%
 over 4 h	179,835	61.6%	10.2%
 The longer the wait, the more often officers find no evidence and the less often action is taken.
 The Bronx has 48.6% "no evidence" outcomes versus 35.4% in Brooklyn.
-This is an association. It likely runs in both directions (noise that stops on its own leaves nothing to find). [TODO: check it holds within each borough, query 10.]
+This is an association. It likely runs in both directions (noise that stops on its own leaves nothing to find). 
+
+Query 10 confirms the pattern holds within every borough (for example, "no evidence" rises
+from 29.2% to 65.3% in Queens and from 37.9% to 63.9% in the Bronx as waits grow from under
+30 min to over 4 h). The Bronx's higher overall share of "no evidence" outcomes (48.6%) is
+mostly explained by 28.5% of its requests waiting over 4 hours, versus 6% to 12% in other
+boroughs (except Staten Island at 3.9%). Even for responses under 30 minutes, action is
+taken less often in the Bronx (26.2%, versus 31% to 56% elsewhere).
 
 Q5. Income and demographics
 
