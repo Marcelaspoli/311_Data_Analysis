@@ -16,6 +16,7 @@ This project focuses on one complaint type, **Noise - Residential** (NYPD), so t
 - **Source:** [NYC Open Data: 311 Service Requests from 2020 to Present](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2020-to-Present/erm2-nwe9/about_data)
 - **Original size:** approx. 22 million rows and 44 columns.
 - **Data extracted on:** 09 Oct 2026
+- **Income data:** median household income by ZIP Code Tabulation Area (table B19013) from the [US Census Bureau American Community Survey](https://data.census.gov), 2020-2024 5-year estimates, downloaded with `scripts/05_download_census.py` (requires a free Census API key).
 
 ### Initial filtering
 I used the query function on the NYC Open Data website to:
