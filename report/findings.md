@@ -8,16 +8,6 @@ Data summary
     Every request has a closed date, so there are no open cases to handle.
     288 rows have no borough and 317 have no valid zip. They are kept but excluded from geographic comparisons.
 
-Q4. What does a closed case mean?
-
-    Closed means the police responded and closed the ticket, not that the noise was resolved.
-
-    Roughly 38% of requests closed with "no evidence of the violation".
-    Roughly 30% closed with action taken to fix the condition.
-    About 11.5% closed as police action not necessary, 8% because officers could not gain entry, and 1.3% because those responsible were gone on arrival.
-    Median waits differ by outcome: 0.67 h when action was taken, 1.22 h for "no evidence", 1.50 h when those responsible were gone.
-
-    So resolution time here measures time until a police response, not time until the problem was fixed.
 
 Q1. How long do requests take, by area?
 
@@ -90,9 +80,25 @@ over 4 h	179,835	61.6%	10.2%
 
     Query 10 confirms the pattern holds within every borough (for example, "no evidence" rises from 29.2% to 65.3% in Queens and from 37.9% to 63.9% in the Bronx as waits grow from under 30 min to over 4 h). The Bronx's higher overall share of "no evidence" outcomes (48.6%) is mostly explained by 28.5% of its requests waiting over 4 hours, versus 6% to 12% in other boroughs (except Staten Island at 3.9%). Even for responses under 30 minutes, action is taken less often in the Bronx (26.2%, versus 31% to 56% elsewhere).
 
+Q4. What does a closed case mean?
+
+    Closed means the police responded and closed the ticket, not that the noise was resolved.
+
+    Roughly 38% of requests closed with "no evidence of the violation".
+    Roughly 30% closed with action taken to fix the condition.
+    About 11.5% closed as police action not necessary, 8% because officers could not gain entry, and 1.3% because those responsible were gone on arrival.
+    Median waits differ by outcome: 0.67 h when action was taken, 1.22 h for "no evidence", 1.50 h when those responsible were gone.
+
+    So resolution time here measures time until a police response, not time until the problem was fixed
+
 Q5. Income and demographics
 
-[TODO: join census median household income by zip code. Run the comparison with and without Bronx CB 12, and for a baseline period (Jan 2023 to Jun 2024).]
+    Median household income by zip code (ACS 2020-2024 5-year, table B19013) was joined to zip-level median resolution times (zips with 300+ requests, excluding two zips with the capped income of $250,001; 166 zips in total). Run for all data, without Bronx CB 12, and for a calm baseline (Jun 2023 to May 2024).
+
+    - Citywide: weak negative association between income and wait (Spearman -0.34; about 4% shorter median wait per extra $10,000; R-squared 0.13). In the baseline it is weaker (-0.22; 2.7% per $10,000; R-squared 0.06).
+    - By income quartile: the highest-income quartile waits roughly 30% less (0.58 h) than the other three (0.80 to 0.88 h, excluding CB 12). The lowest-income quartile is not the slowest. The all-data Q2 median (1.27 h, p90 9.97 h) is inflated by the CB 12 zips.
+    - Within boroughs: the relationship is not consistent. In the Bronx higher-income zips have longer waits (rho +0.60 to +0.72 in every scenario). Queens and Manhattan show negative values in some scenarios but not all, and Brooklyn and Staten Island are mostly not significant. Much of the citywide association therefore reflects between-borough differences, since the Bronx is both lower-income and slower.
+    - Conclusion: income is at most a modest factor in response-time differences. Borough and the CB 12 surges matter more. Results are area-level associations, not causes, and say nothing about individual callers.
 
 Limitations
 
@@ -104,5 +110,4 @@ The 2024-25 surges are unexplained by this dataset.
 
 Still to do
 
-Census join and income analysis (Q5).
 Tableau dashboard, report, presentation.
