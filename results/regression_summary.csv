@@ -1,0 +1,18 @@
+part,scenario,model,term,pct_change,ci_low,ci_high,p,adj_r2
+A,all,Income only,income per $10k,-4.1,-5.6,-2.5,2.0418482427686065e-07,0.126
+A,all,Income + borough,income per $10k,-1.6,-3.3,0.1,0.06517503654728486,0.308
+A,excl_cb12,Income only,income per $10k,-4.0,-5.4,-2.5,3.340741694179248e-07,0.129
+A,excl_cb12,Income + borough,income per $10k,-1.8,-3.5,-0.1,0.03558469058085548,0.277
+A,baseline_jun23_may24,Income only,income per $10k,-2.7,-4.2,-1.2,0.00034228786064503553,0.053
+A,baseline_jun23_may24,Income + borough,income per $10k,-0.2,-1.7,1.3,0.7751976366233261,0.332
+B,sample,B1: borough + income + time,BRONX,84.5,47.2,131.3,1.0504725457590426e-07,0.11
+B,sample,B1: borough + income + time,BROOKLYN,9.4,-7.4,29.3,0.28962165707755705,0.11
+B,sample,B1: borough + income + time,QUEENS,50.8,26.6,79.6,4.132088874523789e-06,0.11
+B,sample,B1: borough + income + time,STATEN ISLAND,19.1,4.6,35.7,0.00855889016879958,0.11
+B,sample,B1: borough + income + time,income per $10k,-2.0,-4.9,0.9,0.16818090459841317,0.11
+B,sample,B2: B1 + Bronx CB 12 indicator,BRONX,53.7,17.6,100.9,0.0016391401500617088,0.115
+B,sample,B2: B1 + Bronx CB 12 indicator,BROOKLYN,8.8,-7.6,28.2,0.3117628397152671,0.115
+B,sample,B2: B1 + Bronx CB 12 indicator,QUEENS,49.9,25.9,78.5,5.5753078273103464e-06,0.115
+B,sample,B2: B1 + Bronx CB 12 indicator,STATEN ISLAND,19.2,4.5,36.0,0.009023606499005932,0.115
+B,sample,B2: B1 + Bronx CB 12 indicator,income per $10k,-2.9,-5.4,-0.2,0.032824027230063946,0.115
+B,sample,B2: B1 + Bronx CB 12 indicator,Bronx CB 12,42.9,13.5,80.1,0.002433370136817289,0.115
